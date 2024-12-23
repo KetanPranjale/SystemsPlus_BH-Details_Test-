@@ -57,7 +57,7 @@ public class BH_Test {
         }
         String address1 =driver.findElement(By.xpath(new String("//div[@id='****']//span[@class='centerResult__address']").replace("****",id))).getText();
         String address2 =driver.findElement(By.xpath(new String("//div[@class='mapTooltip__address']"))).getText();
-        address2=address2.replace("\n","");
+        address2=address2.replace("\n"," ");
         if(address1.equals(address2)){
             System.out.println("Verification: Correct center address displayed");
         } else{
